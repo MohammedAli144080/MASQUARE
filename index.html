@@ -3,26 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional portfolio of Eng. Mohammed Ali Abdallah Ahmed, Electrical Automation Engineer specializing in BMS, HVAC, Smart Buildings, and Solar PV Systems.">
-  <meta name="keywords" content="automation engineer, BMS, HVAC, Siemens, solar PV, smart buildings, engineering portfolio">
-  <meta name="author" content="Mohammed Ali Abdallah Ahmed">
+  <meta name="description" content="Portfolio of Eng. Mohammed Ali Abdallah Ahmed – Electrical Automation Engineer specializing in Siemens BMS, HVAC, Smart Buildings & Solar PV Systems." />
   <title>Eng. Mohammed Ali Abdallah Ahmed | Automation Engineer</title>
 
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- Theme Toggle (Optional) -->
-<button class="theme-toggle" aria-label="Toggle Dark/Light Mode"><i class="fas fa-moon"></i></button>
-
 <!-- Animated Tech Background -->
-<div class="background">
-  <svg class="tech-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0 50 Q25 20 50 50 T100 50 M50 0 Q80 25 50 50 T50 100" stroke="var(--accent)" stroke-width="0.5" fill="none"/>
+<div class="tech-bg" aria-hidden="true">
+  <svg class="circuit" viewBox="0 0 1200 800" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="var(--primary)" stop-opacity="0.12"/>
+        <stop offset="100%" stop-color="transparent"/>
+      </linearGradient>
+    </defs>
+    <g class="lines">
+      <path d="M0 400 Q300 200 600 400 T1200 400" stroke="url(#grad1)" stroke-width="1.5" fill="none"/>
+      <path d="M0 420 Q400 620 800 420 T1200 420" stroke="url(#grad1)" stroke-width="1.2" fill="none"/>
+      <path d="M0 380 Q500 180 900 380 T1200 380" stroke="url(#grad1)" stroke-width="0.8" fill="none"/>
+      <path d="M0 440 Q200 640 1000 440 T1200 440" stroke="url(#grad1)" stroke-width="1" fill="none"/>
+    </g>
   </svg>
   <div class="grid-pattern"></div>
   <div class="glow glow-1"></div>
@@ -32,106 +38,168 @@
 <!-- Navbar -->
 <nav class="navbar" aria-label="Main navigation">
   <div class="nav-container">
-    <div class="logo"><i class="fas fa-cogs" aria-hidden="true"></i> M. Ali</div>
+    <div class="logo"><i class="fas fa-cogs"></i> M. Ali</div>
     <ul class="nav-links">
-      <li><a href="#home" class="active"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
-      <li><a href="#about"><i class="fas fa-user" aria-hidden="true"></i> About</a></li>
-      <li><a href="#experience"><i class="fas fa-briefcase" aria-hidden="true"></i> Experience</a></li>
-      <li><a href="#projects"><i class="fas fa-project-diagram" aria-hidden="true"></i> Projects</a></li>
-      <li><a href="#skills"><i class="fas fa-tools" aria-hidden="true"></i> Skills</a></li>
-      <li><a href="#education"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Education</a></li>
-      <li><a href="#contact"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a></li>
-      <li><a href="cv.pdf" class="btn primary" target="_blank"><i class="fas fa-download" aria-hidden="true"></i> Download CV</a></li>
+      <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+      <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+      <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+      <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="cv.pdf" class="btn primary" target="_blank"><i class="fas fa-download"></i> Download CV</a></li>
     </ul>
-    <div class="hamburger" aria-label="Menu toggle"><span></span><span></span><span></span></div>
+    <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
   </div>
 </nav>
 
 <!-- Hero -->
-<section id="home" class="hero" aria-labelledby="home-title">
-  <div class="hero-content glass animate-fade-in">
+<section id="home" class="hero">
+  <div class="hero-content glass">
     <div class="hero-text">
-      <h1 id="home-title" class="animate-slide-up">Eng. Mohammed Ali<br><span class="gradient-text">Abdallah Ahmed</span></h1>
-      <h2 class="animate-slide-up">Electrical Automation Engineer</h2>
-      <p class="tagline animate-slide-up">Specializing in BMS, HVAC, Smart Buildings, and Solar PV Systems. Delivering innovative, energy-efficient solutions for modern infrastructure.</p>
+      <h1 class="animate-slide-up">Eng. Mohammed Ali<br><span class="gradient-text">Abdallah Ahmed</span></h1>
+      <h2 class="animate-slide-up delay-1">Electrical Automation Engineer</h2>
+      <p class="tagline reveal-text animate-slide-up delay-2" data-text="Specializing in Siemens BMS, HVAC DDC, Smart Buildings, and Solar PV Systems. Delivering high-efficiency, future-ready automation solutions for modern infrastructure.">
+        <span class="visible-chars"></span><span class="cursor">|</span>
+      </p>
 
-      <div class="contact-info animate-slide-up">
-        <p><i class="fas fa-map-marker-alt icon-spin" aria-hidden="true"></i> Olaya, Khobar, Eastern Province, Saudi Arabia</p>
-        <p><i class="fas fa-phone icon-spin" aria-hidden="true"></i> +966 532 586 897</p>
-        <p><i class="fas fa-envelope icon-spin" aria-hidden="true"></i> mohammed.ali280@gmail.com</p>
-        <p><i class="fab fa-linkedin icon-spin" aria-hidden="true"></i>
-          <a href="https://www.linkedin.com/in/mohammed-ahmed-13328219a" target="_blank" rel="noopener noreferrer">linkedin.com/in/mohammed-ahmed-13328219a</a>
-        </p>
+      <div class="contact-info animate-slide-up delay-3">
+        <p><i class="fas fa-map-marker-alt icon-spin"></i> Olaya, Khobar, Eastern Province, Saudi Arabia</p>
+        <p><i class="fas fa-phone icon-spin"></i> +966 532 586 897</p>
+        <p><i class="fas fa-envelope icon-spin"></i> mohammed.ali280@gmail.com</p>
+        <p><i class="fab fa-linkedin icon-spin"></i> <a href="https://www.linkedin.com/in/mohammed-ahmed-13328219a" target="_blank">LinkedIn Profile</a></p>
       </div>
 
-      <div class="buttons animate-slide-up">
+      <div class="buttons animate-slide-up delay-4">
         <a href="#contact" class="btn primary pulse">Get in Touch</a>
         <a href="cv.pdf" target="_blank" class="btn outline pulse">Download CV</a>
       </div>
 
-      <div class="availability animate-slide-up">
-        <i class="fas fa-check-circle icon-spin" aria-hidden="true"></i> Transferable Iqama – Available for Immediate Relocation
+      <div class="availability animate-slide-up delay-5">
+        <i class="fas fa-check-circle icon-spin"></i> Transferable Iqama – Immediate Relocation Available
       </div>
     </div>
 
-    <div class="hero-image animate-fade-in">
-      <div class="avatar"><i class="fas fa-robot icon-bounce" aria-hidden="true"></i></div>
+    <div class="hero-image animate-fade-in delay-3">
+      <div class="avatar"><i class="fas fa-robot icon-bounce"></i></div>
     </div>
   </div>
 </section>
 
-<!-- Section Separator -->
-<div class="separator" aria-hidden="true">
-  <svg viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="var(--base)" d="M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,133.3C672,128,768,160,864,176C960,192,1056,192,1152,181.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-</div>
-
 <!-- About -->
-<section id="about" class="section animate-section" aria-labelledby="about-title">
+<section id="about" class="section animate-section">
   <div class="glass section-card">
-    <h3 id="about-title">Professional Summary</h3>
+    <h3>Professional Summary</h3>
     <p>
-      A results-driven Electrical Automation Engineer with over 4 years of hands-on experience in Siemens Building Automation Solutions, HVAC DDC control systems, intelligent lighting control, and solar PV energy systems. 
-      My expertise encompasses presales engineering, system design, BOQ preparation, cost estimation, and technical documentation. I have a proven track record of delivering optimized, compliant solutions for the Saudi Electricity Company (SEC) and leading contractors, resulting in up to 15% cost reductions and 95% client satisfaction rates. 
-      Passionate about integrating cutting-edge IoT and automation technologies to enhance energy efficiency and system reliability in smart buildings and renewable energy projects.
+      Results-driven Electrical Automation Engineer with more than 4 years of specialized experience in <strong>Siemens Building Automation Solutions</strong>, HVAC DDC control systems, intelligent lighting control, and solar PV energy systems. 
+      Expertise in presales engineering, system design, BOQ preparation, accurate cost estimation, and technical documentation. 
+      Proven ability to deliver optimized, SEC-compliant solutions for Saudi Electricity Company and major contractors, consistently achieving up to 15% cost reduction and 95% client satisfaction.
     </p>
   </div>
 </section>
 
-<!-- Separator -->
-<div class="separator" aria-hidden="true">
-  <svg viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="var(--base)" d="M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,133.3C672,128,768,160,864,176C960,192,1056,192,1152,181.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-</div>
-
 <!-- Experience -->
-<section id="experience" class="section animate-section" aria-labelledby="experience-title">
-  <h3 id="experience-title" class="section-title">Professional Experience</h3>
-
+<section id="experience" class="section animate-section">
+  <h3 class="section-title">Professional Experience</h3>
   <div class="timeline">
     <div class="glass timeline-card animate-slide-left">
-      <span class="date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Mar 2024 – Present</span>
-      <h4><i class="fas fa-cog" aria-hidden="true"></i> Controls Engineer – Building Automation Design & Presales</h4>
-      <p class="company">Sela-PASS (Siemens Building Technologies Solution Partner) • Khobar, Saudi Arabia</p>
+      <span class="date"><i class="fas fa-calendar-alt"></i> Mar 2024 – Present</span>
+      <h4>Controls Engineer – Building Automation Design & Presales</h4>
+      <p class="company">Sela-PASS (Siemens Partner) • Khobar, Saudi Arabia</p>
       <ul>
-        <li>Designed and delivered Siemens-based DDC panels for SEC substation HVAC and BMS systems, ensuring seamless integration and optimal performance.</li>
-        <li>Led presales activities, including technical proposals, AutoCAD layouts, BOQs, and cost estimation, contributing to successful project acquisitions.</li>
-        <li>Configured PXC & DXR controllers, SID/HIT tools, and IEQ sensors to optimize energy efficiency, reducing operational costs.</li>
-        <li>Integrated KNX, BACnet, and DALI-2 systems for smart lighting and building automation, enhancing system interoperability.</li>
-        <li>Supported commissioning, performance tuning, and post-handover support, achieving 95% customer satisfaction through proactive issue resolution.</li>
+        <li>Designed & delivered Siemens DDC panels for SEC substation HVAC/BMS systems</li>
+        <li>Led presales: technical proposals, AutoCAD layouts, BOQs, cost estimation</li>
+        <li>Configured PXC/DXR controllers, SID/HIT tools, IEQ sensors for energy optimization</li>
+        <li>Integrated KNX, BACnet, DALI-2 for smart lighting & automation</li>
+        <li>Achieved 95% customer satisfaction through commissioning & support</li>
       </ul>
     </div>
 
-    <!-- Add all other experience entries similarly -->
+    <div class="glass timeline-card animate-slide-left delay-1">
+      <span class="date"><i class="fas fa-calendar-alt"></i> Aug–Dec 2023 (Part-Time)</span>
+      <h4>Solar Engineer – PV Systems</h4>
+      <p class="company">Al-Aggar Renewable Solar Solutions • Sudan</p>
+      <ul>
+        <li>Designed & installed 10+ off-grid/hybrid solar PV systems</li>
+        <li>Improved availability & reduced downtime by 10%</li>
+        <li>Prepared IEC-compliant designs, proposals & cost estimates</li>
+      </ul>
+    </div>
 
+    <div class="glass timeline-card animate-slide-left delay-2">
+      <span class="date"><i class="fas fa-calendar-alt"></i> Sep 2022 – Dec 2023</span>
+      <h4>Automation Engineer</h4>
+      <p class="company">DAL Group – Agricultural Services • Sudan</p>
+      <ul>
+        <li>Maintained automated production lines – reduced downtime by 15%</li>
+        <li>Supported PLC, HMI, MCC & instrumentation systems</li>
+        <li>Implemented predictive maintenance & root-cause analysis</li>
+      </ul>
+    </div>
+
+    <div class="glass timeline-card animate-slide-left delay-3">
+      <span class="date"><i class="fas fa-calendar-alt"></i> Apr–Aug 2022</span>
+      <h4>Product Support Engineer</h4>
+      <p class="company">Afroscot Services Co. Ltd • Sudan</p>
+      <ul>
+        <li>Commissioned diesel & hybrid solar systems for 15+ telecom sites</li>
+        <li>Rehabilitated legacy systems to 76% capacity</li>
+        <li>Resolved 90% of issues within 24 hours</li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<!-- Add separators and other sections similarly -->
+<!-- Projects -->
+<section id="projects" class="section animate-section">
+  <h3 class="section-title">Key Projects</h3>
+  <div class="grid-3">
+    <div class="glass card animate-zoom-in">
+      <i class="fas fa-bolt icon-spin"></i>
+      <h4>SEC Substations</h4>
+      <p>HVAC & BMS DDC Panels – Design, Manufacturing, Testing & Commissioning</p>
+    </div>
+    <div class="glass card animate-zoom-in delay-1">
+      <i class="fas fa-hospital icon-spin"></i>
+      <h4>King Faisal Specialist Hospital</h4>
+      <p>BMS Testing & Commissioning – Medina</p>
+    </div>
+    <div class="glass card animate-zoom-in delay-2">
+      <i class="fas fa-sun icon-spin"></i>
+      <h4>Off-Grid Solar Systems</h4>
+      <p>11+ hybrid installations for rural infrastructure</p>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section animate-section">
+  <h3 class="section-title">Technical Skills</h3>
+  <div class="skills-grid">
+    <div class="glass skill-item animate-zoom-in">
+      <div class="skill-meter" style="--progress: 95;"><span>Siemens Desigo CC</span></div>
+    </div>
+    <div class="glass skill-item animate-zoom-in delay-1">
+      <div class="skill-meter" style="--progress: 90;"><span>DDC & HVAC Control</span></div>
+    </div>
+    <div class="glass skill-item animate-zoom-in delay-2">
+      <div class="skill-meter" style="--progress: 85;"><span>Solar PV & BESS</span></div>
+    </div>
+    <div class="glass skill-item animate-zoom-in delay-3">
+      <div class="skill-meter" style="--progress: 92;"><span>AutoCAD & MATLAB</span></div>
+    </div>
+  </div>
+</section>
 
 <!-- Footer -->
-<footer id="contact" class="footer glass" aria-labelledby="contact-title">
+<footer id="contact" class="footer glass">
   <div class="footer-content">
-    <h3 id="contact-title" class="sr-only">Contact</h3>
-    <!-- Content -->
+    <p><strong>Languages:</strong> Arabic (Native) • English (Full Professional)</p>
+    <p><strong>Volunteer:</strong> Social Media Director – Insan Khair Initiative</p>
+    <p>mohammed.ali280@gmail.com | +966 532 586 897</p>
+    <p>© 2026 Eng. Mohammed Ali Abdallah Ahmed</p>
   </div>
 </footer>
 
