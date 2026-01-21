@@ -13,9 +13,12 @@
 </head>
 <body>
 
-<!-- Animated Background -->
+<!-- Animated Tech Background -->
 <div class="background">
-  <div class="circuit-pattern"></div>
+  <svg class="tech-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path d="M0 50 Q25 20 50 50 T100 50 M50 0 Q80 25 50 50 T50 100" stroke="var(--accent)" stroke-width="0.5" fill="none"/>
+  </svg>
+  <div class="grid-pattern"></div>
   <div class="glow glow-1"></div>
   <div class="glow glow-2"></div>
 </div>
@@ -23,16 +26,16 @@
 <!-- Navbar -->
 <nav class="navbar">
   <div class="nav-container">
-    <div class="logo">M. Ali</div>
+    <div class="logo"><i class="fas fa-cogs"></i> M. Ali</div>
     <ul class="nav-links">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="cv.pdf" class="btn primary" target="_blank">Download CV</a></li>
+      <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+      <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+      <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+      <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="cv.pdf" class="btn primary" target="_blank"><i class="fas fa-download"></i> Download CV</a></li>
     </ul>
     <div class="hamburger"><span></span><span></span><span></span></div>
   </div>
@@ -40,169 +43,178 @@
 
 <!-- Hero -->
 <section id="home" class="hero">
-  <div class="hero-content neumorphic">
+  <div class="hero-content glass animate-fade-in">
     <div class="hero-text">
-      <h1>Eng. Mohammed Ali<br><span>Abdallah Ahmed</span></h1>
-      <h2>Electrical Automation Engineer</h2>
-      <p class="tagline">Specializing in BMS | HVAC | Smart Buildings | Solar PV Systems</p>
+      <h1 class="animate-slide-up">Eng. Mohammed Ali<br><span>Abdallah Ahmed</span></h1>
+      <h2 class="animate-slide-up">Electrical Automation Engineer</h2>
+      <p class="tagline animate-slide-up">Specializing in BMS, HVAC, Smart Buildings, and Solar PV Systems. Delivering innovative, energy-efficient solutions for modern infrastructure.</p>
 
-      <div class="contact-info">
-        <p><i class="fas fa-map-marker-alt"></i> Olaya, Khobar, Eastern Province, Saudi Arabia</p>
-        <p><i class="fas fa-phone"></i> +966 532 586 897</p>
-        <p><i class="fas fa-envelope"></i> mohammed.ali280@gmail.com</p>
-        <p><i class="fab fa-linkedin"></i>
+      <div class="contact-info animate-slide-up">
+        <p><i class="fas fa-map-marker-alt icon-spin"></i> Olaya, Khobar, Eastern Province, Saudi Arabia</p>
+        <p><i class="fas fa-phone icon-spin"></i> +966 532 586 897</p>
+        <p><i class="fas fa-envelope icon-spin"></i> mohammed.ali280@gmail.com</p>
+        <p><i class="fab fa-linkedin icon-spin"></i>
           <a href="https://www.linkedin.com/in/mohammed-ahmed-13328219a" target="_blank">linkedin.com/in/mohammed-ahmed-13328219a</a>
         </p>
       </div>
 
-      <div class="buttons">
-        <a href="#contact" class="btn primary">Get in Touch</a>
-        <a href="cv.pdf" target="_blank" class="btn outline">Download CV</a>
+      <div class="buttons animate-slide-up">
+        <a href="#contact" class="btn primary pulse">Get in Touch</a>
+        <a href="cv.pdf" target="_blank" class="btn outline pulse">Download CV</a>
       </div>
 
-      <div class="availability">
-        <i class="fas fa-check-circle"></i> Transferable Iqama – Available for Immediate Relocation
+      <div class="availability animate-slide-up">
+        <i class="fas fa-check-circle icon-spin"></i> Transferable Iqama – Available for Immediate Relocation
       </div>
     </div>
 
-    <div class="hero-image">
-      <div class="avatar"><i class="fas fa-user-tie"></i></div>
+    <div class="hero-image animate-fade-in">
+      <div class="avatar"><i class="fas fa-robot icon-bounce"></i></div>
     </div>
   </div>
 </section>
 
 <!-- About -->
-<section id="about" class="section">
-  <div class="neumorphic section-card">
+<section id="about" class="section animate-section">
+  <div class="glass section-card">
     <h3>Professional Summary</h3>
     <p>
-      Results-driven Electrical Automation Engineer with <strong>4+ years</strong> of experience in Siemens Building Automation Solutions, HVAC DDC control systems, intelligent lighting control, and solar PV energy systems. 
-      Strong background in presales engineering, system design, BOQ preparation, estimation, and technical documentation. 
-      Proven ability to deliver optimized, compliant solutions for Saudi Electricity Company (SEC) and leading contractors, achieving up to <strong>15% cost reduction</strong> and <strong>95% client satisfaction</strong>.
+      A results-driven Electrical Automation Engineer with over 4 years of hands-on experience in Siemens Building Automation Solutions, HVAC DDC control systems, intelligent lighting control, and solar PV energy systems. 
+      My expertise encompasses presales engineering, system design, BOQ preparation, cost estimation, and technical documentation. I have a proven track record of delivering optimized, compliant solutions for the Saudi Electricity Company (SEC) and leading contractors, resulting in up to 15% cost reductions and 95% client satisfaction rates. 
+      Passionate about integrating cutting-edge IoT and automation technologies to enhance energy efficiency and system reliability in smart buildings and renewable energy projects.
     </p>
   </div>
 </section>
 
 <!-- Experience -->
-<section id="experience" class="section">
+<section id="experience" class="section animate-section">
   <h3 class="section-title">Professional Experience</h3>
 
   <div class="timeline">
-    <div class="neumorphic timeline-card">
-      <span class="date">Mar 2024 – Present</span>
-      <h4>Controls Engineer – Building Automation Design & Presales</h4>
+    <div class="glass timeline-card animate-slide-left">
+      <span class="date"><i class="fas fa-calendar-alt"></i> Mar 2024 – Present</span>
+      <h4><i class="fas fa-cog"></i> Controls Engineer – Building Automation Design & Presales</h4>
       <p class="company">Sela-PASS (Siemens Building Technologies Solution Partner) • Khobar, Saudi Arabia</p>
       <ul>
-        <li>Designed and delivered Siemens-based DDC panels for SEC substation HVAC and BMS systems</li>
-        <li>Led presales activities: technical proposals, AutoCAD layouts, BOQs, and cost estimation</li>
-        <li>Configured PXC & DXR controllers, SID/HIT tools, and IEQ sensors to optimize energy efficiency</li>
-        <li>Integrated KNX, BACnet, and DALI-2 systems for smart lighting and building automation</li>
-        <li>Supported commissioning, performance tuning, and post-handover support — achieving 95% customer satisfaction</li>
+        <li>Designed and delivered Siemens-based DDC panels for SEC substation HVAC and BMS systems, ensuring seamless integration and optimal performance.</li>
+        <li>Led presales activities, including technical proposals, AutoCAD layouts, BOQs, and cost estimation, contributing to successful project acquisitions.</li>
+        <li>Configured PXC & DXR controllers, SID/HIT tools, and IEQ sensors to optimize energy efficiency, reducing operational costs.</li>
+        <li>Integrated KNX, BACnet, and DALI-2 systems for smart lighting and building automation, enhancing system interoperability.</li>
+        <li>Supported commissioning, performance tuning, and post-handover support, achieving 95% customer satisfaction through proactive issue resolution.</li>
       </ul>
     </div>
 
-    <div class="neumorphic timeline-card">
-      <span class="date">Aug 2023 – Dec 2023 (Part-Time)</span>
-      <h4>Solar Engineer – PV Systems</h4>
+    <div class="glass timeline-card animate-slide-left">
+      <span class="date"><i class="fas fa-calendar-alt"></i> Aug 2023 – Dec 2023 (Part-Time)</span>
+      <h4><i class="fas fa-solar-panel"></i> Solar Engineer – PV Systems</h4>
       <p class="company">Al-Aggar Renewable Solar Solutions • Wad Madani, Sudan</p>
       <ul>
-        <li>Designed and installed 10+ off-grid and hybrid solar PV systems powering rural homes and water stations</li>
-        <li>Improved system availability and reduced downtime by 10% through performance optimization</li>
-        <li>Prepared technical proposals, cost estimates, and IEC-compliant designs</li>
-        <li>Conducted site surveys and coordinated installations with field teams</li>
+        <li>Designed and installed over 10 off-grid and hybrid solar PV systems, powering rural homes and water stations in underserved areas.</li>
+        <li>Improved system availability and reduced downtime by 10% through advanced performance optimization techniques.</li>
+        <li>Prepared comprehensive technical proposals, cost estimates, and IEC-compliant designs, ensuring regulatory adherence.</li>
+        <li>Conducted detailed site surveys and coordinated installations with field teams for efficient project execution.</li>
       </ul>
     </div>
 
-    <div class="neumorphic timeline-card">
-      <span class="date">Sep 2022 – Dec 2023</span>
-      <h4>Automation Engineer</h4>
+    <div class="glass timeline-card animate-slide-left">
+      <span class="date"><i class="fas fa-calendar-alt"></i> Sep 2022 – Dec 2023</span>
+      <h4><i class="fas fa-industry"></i> Automation Engineer</h4>
       <p class="company">DAL Group – DAL Agricultural Services Company • Khartoum, Sudan</p>
       <ul>
-        <li>Maintained Hunter Wood Technologies automated production lines, reducing downtime by 15%</li>
-        <li>Supported PLC, HMI, MCC, and instrumentation systems</li>
-        <li>Implemented predictive maintenance, sensor calibration, and root-cause analysis to improve OEE</li>
+        <li>Maintained Hunter Wood Technologies automated production lines, reducing downtime by 15% via targeted maintenance strategies.</li>
+        <li>Supported PLC, HMI, MCC, and instrumentation systems, ensuring continuous operational efficiency.</li>
+        <li>Implemented predictive maintenance, sensor calibration, and root-cause analysis to improve Overall Equipment Effectiveness (OEE).</li>
       </ul>
     </div>
 
-    <div class="neumorphic timeline-card">
-      <span class="date">Apr 2022 – Aug 2022</span>
-      <h4>Product Support Engineer</h4>
+    <div class="glass timeline-card animate-slide-left">
+      <span class="date"><i class="fas fa-calendar-alt"></i> Apr 2022 – Aug 2022</span>
+      <h4><i class="fas fa-tools"></i> Product Support Engineer</h4>
       <p class="company">Afroscot Services Co. Ltd • Khartoum, Sudan</p>
       <ul>
-        <li>Commissioned diesel generators and hybrid solar systems for 15+ telecom sites</li>
-        <li>Rehabilitated legacy systems to 76% operational capacity</li>
-        <li>Resolved 90% of field issues within 24 hours</li>
+        <li>Commissioned diesel generators and hybrid solar systems for over 15 telecom sites, ensuring reliable power supply.</li>
+        <li>Rehabilitated legacy systems to 76% operational capacity through systematic upgrades and repairs.</li>
+        <li>Resolved 90% of field issues within 24 hours, minimizing service disruptions.</li>
       </ul>
     </div>
 
-    <div class="neumorphic timeline-card">
-      <span class="date">Oct 2021 – Feb 2022</span>
-      <h4>Instrumentation Site Engineer</h4>
+    <div class="glass timeline-card animate-slide-left">
+      <span class="date"><i class="fas fa-calendar-alt"></i> Oct 2021 – Feb 2022</span>
+      <h4><i class="fas fa-chart-line"></i> Instrumentation Site Engineer</h4>
       <p class="company">University of Khartoum Consultancy Corporation (UKCC) • Khartoum, Sudan</p>
       <ul>
-        <li>Supported Fixed Asset Management System at Khartoum Refinery</li>
-        <li>Conducted instrumentation audits, improving asset data accuracy by 20%</li>
-        <li>Developed standardized reporting templates for asset tracking and analysis</li>
+        <li>Supported Fixed Asset Management System at Khartoum Refinery, enhancing asset tracking capabilities.</li>
+        <li>Conducted instrumentation audits, improving asset data accuracy by 20%.</li>
+        <li>Developed standardized reporting templates for asset tracking and analysis, streamlining operations.</li>
       </ul>
     </div>
   </div>
 </section>
 
 <!-- Projects -->
-<section id="projects" class="section">
+<section id="projects" class="section animate-section">
   <h3 class="section-title">Key Projects</h3>
   <div class="grid-3">
-    <div class="neumorphic card">
+    <div class="glass card animate-zoom-in">
+      <i class="fas fa-bolt icon-spin"></i>
       <h4>SEC Substations</h4>
-      <p>HVAC & BMS DDC Panels – Design, Manufacturing, Testing & Commissioning</p>
+      <p>HVAC & BMS DDC Panels – Comprehensive design, manufacturing, testing, and commissioning for energy-efficient substation systems.</p>
     </div>
-    <div class="neumorphic card">
+    <div class="glass card animate-zoom-in">
+      <i class="fas fa-hospital"></i>
       <h4>King Faisal Specialist Hospital, Medina</h4>
-      <p>BMS System Testing & Commissioning</p>
+      <p>BMS System Testing & Commissioning – Ensured reliable building management for critical healthcare infrastructure.</p>
     </div>
-    <div class="neumorphic card">
+    <div class="glass card animate-zoom-in">
+      <i class="fas fa-sun"></i>
       <h4>Off-Grid & Hybrid Solar Systems</h4>
-      <p>11+ installations powering rural communities and infrastructure</p>
+      <p>Over 11 installations powering rural communities, water stations, and infrastructure with sustainable energy solutions.</p>
     </div>
-    <div class="neumorphic card">
+    <div class="glass card animate-zoom-in">
+      <i class="fas fa-gears"></i>
       <h4>Industrial Automation</h4>
-      <p>Preventive & Shutdown Maintenance</p>
+      <p>Preventive & Shutdown Maintenance – Optimized production lines for minimal downtime and maximum efficiency.</p>
     </div>
   </div>
 </section>
 
 <!-- Skills -->
-<section id="skills" class="section">
+<section id="skills" class="section animate-section">
   <h3 class="section-title">Technical Skills</h3>
   <div class="skills-grid">
-    <div class="neumorphic card">
+    <div class="glass card animate-zoom-in">
+      <i class="fas fa-building"></i>
       <h4>BMS & Automation</h4>
       <p>Siemens Desigo CC, PXC, DXR-1/2, SID, HIT • KNX, BACnet, DALI-2, LoRaWAN, IoT • PLC, HMI, SCADA</p>
     </div>
-    <div class="neumorphic card">
+    <div class="glass card animate-zoom-in">
+      <i class="fas fa-fan"></i>
       <h4>HVAC & Control Systems</h4>
-      <p>DDC & MCC Panel Design • Sensors, IEQ, VFD, PID</p>
+      <p>DDC & MCC Panel Design • Sensors, IEQ, VFD, PID • Instrumentation and Control Optimization</p>
     </div>
-    <div class="neumorphic card">
+    <div class="glass card animate-zoom-in">
+      <i class="fas fa-solar-panel"></i>
       <h4>Solar & Energy Systems</h4>
-      <p>Off-grid & Hybrid PV Systems • Battery Energy Storage Systems (BESS) • Testing, Commissioning, Load Analysis</p>
+      <p>Off-grid & Hybrid PV Systems • Battery Energy Storage Systems (BESS) • Testing, Commissioning, Load Analysis • Renewable Energy Integration</p>
     </div>
-    <div class="neumorphic card">
+    <div class="glass card animate-zoom-in">
+      <i class="fas fa-laptop-code"></i>
       <h4>Software & Tools</h4>
-      <p>AutoCAD • MATLAB/Simulink • PVSyst • Microsoft Excel (Advanced) • BOQs & Cost Estimation • Technical Proposals & Compliance Reports • Site Assessment & Solution Matching</p>
+      <p>AutoCAD • MATLAB/Simulink • PVSyst • Microsoft Excel (Advanced) • BOQs & Cost Estimation • Technical Proposals & Compliance Reports • Site Assessment & Solution Matching • Presales & Coordination</p>
     </div>
   </div>
 </section>
 
 <!-- Education & Certifications -->
-<section id="education" class="section">
+<section id="education" class="section animate-section">
   <h3 class="section-title">Education & Certifications</h3>
-  <div class="neumorphic section-card">
+  <div class="glass section-card">
+    <i class="fas fa-university"></i>
     <h4>B.Sc. Electrical & Electronics Engineering</h4>
-    <p>University of Khartoum – Sudan • Oct 2020</p>
-    <p><strong>Graduation Project:</strong> Extension of Photovoltaic Power Generation – Al-Fashir Power Plant • Modeled maximum solar penetration using PVSyst & MATLAB/Simulink</p>
+    <p>University of Khartoum – Sudan • Graduated Oct 2020</p>
+    <p><strong>Graduation Project:</strong> Extension of Photovoltaic Power Generation – Al-Fashir Power Plant. Modeled maximum solar penetration using PVSyst & MATLAB/Simulink, demonstrating practical application of renewable energy principles.</p>
 
-    <h4 style="margin-top: 30px;">Certifications & Training</h4>
+    <h4 style="margin-top: 30px;"><i class="fas fa-certificate"></i> Certifications & Training</h4>
     <ul>
       <li>Siemens Intelligent Smart Building Solutions (KNX, BACnet, IoT, DALI-2) – 2025</li>
       <li>Siemens Presales Training – Desigo PXC/DXR – Jan 2025</li>
@@ -213,12 +225,12 @@
 </section>
 
 <!-- Footer -->
-<footer id="contact" class="footer neumorphic">
+<footer id="contact" class="footer glass">
   <div class="footer-content">
-    <p><strong>Languages:</strong> Arabic (Native) • English (Full Professional Proficiency)</p>
-    <p><strong>Volunteer Experience:</strong> Social Media Director & Community Organizer – Insan Khair Initiative, Sudan</p>
-    <p><strong>Interests:</strong> Swimming • Football • Arabic Calligraphy • Free-Hand Drawing</p>
-    <p><strong>Additional:</strong> References available upon request</p>
+    <p><strong><i class="fas fa-language"></i> Languages:</strong> Arabic (Native) • English (Full Professional Proficiency)</p>
+    <p><strong><i class="fas fa-hands-helping"></i> Volunteer Experience:</strong> Social Media Director & Community Organizer – Insan Khair Initiative, Sudan. Organized community events and managed social media campaigns to promote social welfare.</p>
+    <p><strong><i class="fas fa-heart"></i> Interests:</strong> Swimming • Football • Arabic Calligraphy • Free-Hand Drawing</p>
+    <p><strong><i class="fas fa-info-circle"></i> Additional:</strong> References available upon request. Committed to continuous learning and innovation in automation and renewable technologies.</p>
     <p style="margin-top: 20px;">© 2026 Eng. Mohammed Ali Abdallah Ahmed • All rights reserved</p>
     <p>mohammed.ali280@gmail.com | +966 532 586 897</p>
   </div>
