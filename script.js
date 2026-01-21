@@ -2,8 +2,8 @@
 window.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
   navbar.style.background = window.scrollY > 50 
-    ? "rgba(5,11,15,0.9)" 
-    : "rgba(5,11,15,0.4)";
+    ? "rgba(240,244,248,0.98)" 
+    : "rgba(240,244,248,0.9)";
 });
 
 // Mobile menu toggle
